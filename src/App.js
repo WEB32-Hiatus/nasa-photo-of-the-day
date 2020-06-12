@@ -13,11 +13,13 @@ const ContainerWrapper = styled.div`
 
 const TitleWrapper = styled.h1`
   color: #DC143C;
+  margin-top: 20px;
 `;
 
-const ImageWrapper = styled.image`
+const Img = styled.img`
   border-radius: 50%;
-  border: solid red 2px;
+  height: 100vh;
+  width: 50vw;
 `;
 
 const ExplanationWrapper = styled.p`
@@ -48,10 +50,8 @@ function App() {
         <TitleWrapper>
           <Title title={nasaData.title}/>
         </TitleWrapper>
-        <ImageWrapper>
-          <Image src={nasaData.url} alt={nasaData.explanation}/>
-        </ImageWrapper>
-        <ExplanationWrapper>
+        <Img src={nasaData.url} alt={nasaData.explanation}/>
+>       <ExplanationWrapper>
           <Explanation explanation={nasaData.explanation}/>
         </ExplanationWrapper>
         <DateWrapper>
